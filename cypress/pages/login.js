@@ -1,8 +1,8 @@
 export class loginpage{
     //Creating the Object
     weblocators={
-        userid:'#Email',
-        password:'#Password'
+        Userid:'input#Email',
+        Password:'#input#Password'
     }
 
     //It is coming from config file
@@ -12,10 +12,10 @@ export class loginpage{
 
     //Creating the Methods
     enteruserid(USERID){
-        cy.get(this.weblocators.userid).type(USERID)
+        cy.get(this.weblocators.Userid).type(USERID)
     }
 
     enterpassword(PASSWORD){
-        cy.get(this.weblocators.password).type(PASSWORD)
+        cy.get(this.weblocators.Password).type(PASSWORD)
     }
 }
